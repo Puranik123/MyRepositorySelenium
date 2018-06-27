@@ -1,0 +1,17 @@
+Hub->
+java -DWebDriver.chrome.driver=D:\Selenium\chromedriver_win32\chromedriver.exe -jar Jars\selenium-server-standalone-3.11.0.jar -role hub -hubConfig hub.json
+
+
+Node1->
+java -DWebDriver.chrome.driver=D:\Selenium\chromedriver_win32\chromedriver.exe -jar Jars\selenium-server-standalone-3.11.0.jar -role node -nodeConfig node1.json	
+
+Node2->
+java -DWebDriver.chrome.driver=D:\Selenium\chromedriver_win32\chromedriver.exe -jar Jars\selenium-server-standalone-3.11.0.jar -role node -nodeConfig node2.json
+
+
+
+
+
+java -DWebDriver.chrome.driver=D:\Selenium\chromedriver_win32\chromedriver.exe -jar D:\Jars\selenium-server-standalone-3.11.0.jar -role node -hub http://192.168.0.226:4444/grid/register -port 5550 
+
+java -DWebDriver.chrome.driver=D:\Selenium\chromedriver_win32\chromedriver.exe -jar D:\Jars\selenium-server-standalone-3.11.0.jar -role node -hub http://192.168.0.220:4444/grid/register -port 5555

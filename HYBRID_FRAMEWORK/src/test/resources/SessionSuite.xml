@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Session Suite" parallel="tests">
+
+<test name="Flipkart Login">
+    <classes>
+        <class name="com.qtpselenium.hybrid.sessionsuite.LoginTest" ></class>
+        <class name="com.qtpselenium.hybrid.sessionsuite.ChangePasswordTest" ></class>
+    </classes>
+</test>
+
+</suite>

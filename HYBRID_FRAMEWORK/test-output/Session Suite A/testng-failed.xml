@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Session Suite A]">
+  <test name="Flipkart Login(failed)">
+    <classes>
+      <class name="com.qtpselenium.hybrid.sessionsuite.ChangePasswordTest">
+        <methods>
+          <include name="ChangePassword" invocation-numbers="0"/>
+          <include name="EndingTest"/>
+        </methods>
+      </class> <!-- com.qtpselenium.hybrid.sessionsuite.ChangePasswordTest -->
+      <class name="com.qtpselenium.hybrid.sessionsuite.LoginTest">
+        <methods>
+          <include name="EndingTest"/>
+          <include name="doLogin" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.qtpselenium.hybrid.sessionsuite.LoginTest -->
+    </classes>
+  </test> <!-- Flipkart Login(failed) -->
+</suite> <!-- Failed suite [Session Suite A] -->
