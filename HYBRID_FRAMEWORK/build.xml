@@ -19,7 +19,7 @@
 
     <target name="setClassPath" unless="test.classpath">
         <path id="classpath_jars">
-            <fileset dir="${ws.jars}" includes="*.jar"/>
+            <fileset dir="${user.home}/.m2/repository" includes="*.jar"/>
         </path>
         <pathconvert pathsep=":" 
             property="test.classpath" 
