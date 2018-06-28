@@ -38,7 +38,7 @@
         
      <!--taskdef name="testng" classpath="${test.classpath}"
                classname="org.testng.TestNGAntTask" -->
-    	</taskdef name="testng" classpathref="classpath_jars" 
+    	<taskdef name="testng" classpathref="classpath_jars" 
     		classname="org.testng.TestNGAntTask" />
     
     </target>
