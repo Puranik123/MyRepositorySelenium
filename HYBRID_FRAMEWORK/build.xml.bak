@@ -63,7 +63,7 @@
 	
 		
     <!-- compile -->
-    <target name="compile" depends="setClassPath,init, clean" > 
+    <target name="compile" depends="init, clean" > 
 		<delete includeemptydirs="true" quiet="true">
             <fileset dir="${test.dest}" includes="**/*"/>
 		</delete>
