@@ -38,14 +38,14 @@
         
      <!--taskdef name="testng" classpath="${test.classpath}"
                classname="org.testng.TestNGAntTask" -->
-    	<taskdef name="testng" classpathref="classpath_jars" 
-    		classname="org.testng.TestNGAntTask"/>
+    	<!--taskdef name="testng" classpathref="classpath_jars" 
+    		classname="org.testng.TestNGAntTask"-->
 			
-    <!--taskdef name="testng" classname="org.testng.TestNGAntTask">
+    <taskdef name="testng" classname="org.testng.TestNGAntTask">
     <classpath>
     <pathelement location="C:/Users/Sankalp/.m2/repository/org/testng/testng/6.11/testng-6.11.jar"/>
    </classpath>
-   </taskdef-->		
+   </taskdef>		
     
     </target>
   
