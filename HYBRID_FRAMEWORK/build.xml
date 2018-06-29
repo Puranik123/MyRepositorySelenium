@@ -76,7 +76,7 @@
             destdir="${test.dest}" 
             srcdir="${test.src}" 
             target="1.5" 
-            classpath="${test.classpath}"
+            classpath="${classpath_jars}"
         >
         </javac>
       </target>
