@@ -17,10 +17,11 @@
         <java jar="${ws.home}/lib/selenium-server.jar"/>
     </target-->
 
-    <target name="setClassPath" unless="test.classpath">
+    
         <path id="classpath_jars">
-            <fileset dir="${user.home}/.m2/repository" includes="*.jar"/>
+            <fileset dir="${user.home}/.m2/repository" includes="**/*.jar"/>
         </path>
+	<target name="setClassPath" unless="test.classpath">
         <pathconvert pathsep=":" 
             property="test.classpath" 
             refid="classpath_jars"/>
@@ -44,10 +45,7 @@
     <taskdef name="testng" classname="org.testng.TestNGAntTask">
     <classpath>
     <pathelement location="C:/Users/Sankalp/.m2/repository/org/testng/testng/6.11/testng-6.11.jar"/>
-	<pathelement location="C:/Users/Sankalp/.m2/repository/org/seleniumhq/selenium"/>
-	<pathelement location="C:/Users/Sankalp/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar"/>
-	<pathelement location="C:/Users/Sankalp/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar"/>
-   </classpath>
+	</classpath>
    </taskdef>		
     
     </target>
